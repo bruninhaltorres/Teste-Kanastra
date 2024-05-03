@@ -5,4 +5,6 @@ def cpf_valido(numero_cpf):
     return cpf.validate(numero_cpf)
 
 def nome_valido(nome):
-    return nome.isalpha()
+    if all(char.isalpha() or char.isspace() for char in nome):
+        return True
+    return False 
