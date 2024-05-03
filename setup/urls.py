@@ -6,7 +6,7 @@ from rest_framework import routers
 
 # Rotas principais:
 router = routers.DefaultRouter()
-router.register('tasks', PersonViewSet, basename='Persons')
+router.register('persons', PersonViewSet, basename='Persons')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
