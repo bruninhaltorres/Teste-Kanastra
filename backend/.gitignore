@@ -1,0 +1,21 @@
+# Arquivos e pastas específicos do Django
+*.pyc
+*.pyo
+__pycache__
+*.sqlite3
+*.pyc
+
+# Arquivos de configuração do Django
+*.env
+*.ini
+*.conf
+
+# Arquivos de log
+*.log
+
+# Ambiente virtual
+venv/
+env/
+
+# Outros
+.DS_Store

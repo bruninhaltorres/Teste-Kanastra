@@ -3,7 +3,14 @@ from app.models import Person
 
 from app.validators import *
 
+class CustomDateField(serializers.DateField):
+    def __init__(self, *args, **kwargs):
+        kwargs['input_formats'] = ['%d/%m/%Y']  # Formato DD-MM-YYYY
+        super().__init__(*args, **kwargs)
+
 class PersonSerializer(serializers.ModelSerializer):
+
+    debtDueDate = CustomDateField()
 
     class Meta:
         model = Person
