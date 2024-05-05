@@ -5,12 +5,13 @@ from app.validators import *
 
 class CustomDateField(serializers.DateField):
     def __init__(self, *args, **kwargs):
-        kwargs['input_formats'] = ['%d/%m/%Y']  # Formato DD/MM/YYYY
+        date_formats = ['%d/%m/%Y', '%Y-%m-%d']
+        kwargs['input_formats'] = date_formats
         super().__init__(*args, **kwargs)
 
 class PersonSerializer(serializers.ModelSerializer):
 
-    # debtDueDate = CustomDateField()
+    debtDueDate = CustomDateField()
 
     class Meta:
         model = Person
