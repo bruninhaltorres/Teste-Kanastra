@@ -28,7 +28,7 @@ urlpatterns = [
     path('get-csrf-token/', get_csrf_token, name='get_csrf_token'),
 
     # Rota para endpoint sem barra
-    path('charges', PersonViewSet.as_view({'get': 'list', 'post': 'create'}), name='charges_no_slash'),
+    path('charges', PersonViewSet.as_view({'get': 'list', 'post': 'create', 'delete': 'delete'}), name='charges_no_slash'),
 
     path('', include(router.urls))
 ] 

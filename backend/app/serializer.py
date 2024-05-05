@@ -1,3 +1,5 @@
+"""Mapeamento dos modelos de banco de dados para representações serializadas, como JSON"""
+
 from rest_framework import serializers
 from app.models import Person
 
@@ -15,7 +17,7 @@ class PersonSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Person
-        fields = ['name', 'governmentId', 'email', 'debtAmount', 'debtDueDate']
+        fields = ['id', 'name', 'governmentId', 'email', 'debtAmount', 'debtDueDate']
 
     """
     def validate(self, data):
