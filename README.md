@@ -15,7 +15,7 @@ Este sistema foi desenvolvido visando solucionar o desafio de construir um siste
 - Django e Django Rest Framework
 - React.JS
 - Docker e Docker Compose
-- MySQL
+- SQLite
 - Postman
 - Swagger
 
@@ -24,7 +24,7 @@ Certifique-se de ter o Docker, o Docker Compose e o Docker Desktop instalados em
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
+- [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)    
 
 ## Instalação e Execução do sistema
 
@@ -34,8 +34,6 @@ Clone o repositório do GitHub para sua máquina local:
 ```bash
 git clone https://github.com/seu-usuario/seu-projeto.git
 ```
-
-### Passo 2: Iniciar o sistema
 
 #### 2.1: Docker Desktop
 Inicialize o Docker Desktop e espere que o mesmo esteja em execução e pronto pra ser usado antes de seguir para os próximos passos.
