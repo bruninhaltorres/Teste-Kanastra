@@ -10,8 +10,10 @@
 - Postman
 
 ## Requisitos
-- Docker instalado: [Instruções de instalação do Docker](https://docs.docker.com/get-docker/)
-- Navegador web moderno (para acessar o frontend)
+Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina antes de prosseguir.
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Instalação e Execução do sistema
 
@@ -21,58 +23,30 @@ Clone o repositório do GitHub para sua máquina local:
 ```bash
 git clone https://github.com/seu-usuario/seu-projeto.git
 ```
-### Passo 2: Configuração do BackEnd
+### Passo 2: Iniciar o sistema
 
-#### 2.1 Instalar Dependências
-Certifique-se de estar no diretório raiz do projeto e execute o seguinte comando para construir a imagem Docker do backend:
+#### 2.1: No terminal, navegue até o diretório onde você clonou este repositório.
 
+#### 2.2: Execute o seguinte comando para iniciar o teste do sistema:
 ```bash
-cd seu-projeto
-docker build -t nome-imagem-backend .
+docker-compose up
 ```
 
-#### 2.2 Iniciar o Contêiner do Backend
-Após a construção da imagem, inicie o contêiner do backend:
+#### 2.3: Aguarde até que o Docker Compose construa as imagens e inicie os contêineres.
 
-```bash
-docker run -p 8000:8000 nome-imagem-backend
-```
-
-### Passo 3: Configuração do FrontEnd
-
-#### 3.1 Instalar Dependências
-Certifique-se de estar no diretório raiz do projeto e navegue até o diretório do frontend:
-
-```bash
-cd frontend
-```
-Instale as dependências do frontend:
-
-```bach
-npm install
-```
-
-#### 3.2 Iniciar o Servidor de Desenvolvimento do Frontend
-Após a instalação das dependências, inicie o servidor de desenvolvimento do frontend:
-
-```bach
-npm start
-```
-
-### Passo 4: Acessar o Sistema
+### Passo 3: Acessar o Sistema
 
 #### FrontEnd:
 
-    http://localhost:3000/charges
+    http://localhost:3000/
 
-#### API:
+#### BackEnd:
   
-    http://localhost:8000/charges
+    http://localhost:8000/
     
-#### Documentação Swagger:
+##### Documentação Swagger:
 
     http://localhost:8000/swagger/
 
-#### Django Admin:
-  
-    http://localhost:8000/admin/
+### Passo 4: Encerrar o sistema
+Para interromper a execução do teste e desligar os contêineres, pressione Ctrl + C no terminal onde o docker-compose up está sendo executado.
