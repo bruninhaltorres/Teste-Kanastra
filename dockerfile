@@ -28,5 +28,4 @@ RUN npm run build --prefix /frontend/app
 # Expose a porta 8000 para o servidor web do backend
 EXPOSE 8000
 
-# Comando para iniciar o aplicativo usando Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.setup.wsgi"]
+CMD ["python", "backend/manage.py", "runserver", "0.0.0.0:8000"]
