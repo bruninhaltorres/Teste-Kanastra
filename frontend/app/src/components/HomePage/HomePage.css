@@ -11,4 +11,5 @@
 }
 .body {
   color: green; /* cor do texto no cabeçalho */
+  text-align: center;
 }
