@@ -29,3 +29,6 @@ RUN npm run build --prefix /frontend/app
 EXPOSE 8000
 
 CMD ["python", "backend/manage.py", "runserver", "0.0.0.0:8000"]
+
+# Comando para iniciar o servidor de frontend com PM2
+CMD ["npm", "start", "--prefix", "frontend\\app"]
