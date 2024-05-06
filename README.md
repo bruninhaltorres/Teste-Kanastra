@@ -20,10 +20,11 @@ Este sistema foi desenvolvido visando solucionar o desafio de construir um siste
 - Swagger
 
 ## Requisitos
-Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina antes de prosseguir.
+Certifique-se de ter o Docker, o Docker Compose e o Docker Desktop instalados em sua máquina antes de prosseguir.
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
 
 ## Instalação e Execução do sistema
 
@@ -35,6 +36,11 @@ git clone https://github.com/seu-usuario/seu-projeto.git
 ```
 
 ### Passo 2: Iniciar o sistema
+
+#### 2.1: Docker Desktop
+Inicialize o Docker Desktop e espere que o mesmo esteja em execução e pronto pra ser usado antes de seguir para os próximos passos.
+
+#### 2.2: Compilando
 No terminal, navegue até o diretório onde você clonou este repositório e execute o seguinte comando para iniciar o sistema:
 
 ```bash
