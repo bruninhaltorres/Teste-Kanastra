@@ -1,0 +1,32 @@
+/* Estilo para todos os inputs */
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: calc(100% - 20px); /* Ajusta a largura para o tamanho do formulário */
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio ao passar o mouse */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para todos os formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}

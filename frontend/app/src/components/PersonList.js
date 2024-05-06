@@ -16,10 +16,9 @@ function PersonList() {
 
   return (
     <div>
-      <h2>Sistema de Cobranças</h2>
       <ul>
         {persons.map(person => (
-          <li key={person.id}>
+          <li key={person.id} style={{ marginBottom: '10px' }}>
             <strong>Nome:</strong> {person.name}<br />
             <strong>Documento:</strong> {person.governmentId}<br />
             <strong>Email:</strong> {person.email}<br />

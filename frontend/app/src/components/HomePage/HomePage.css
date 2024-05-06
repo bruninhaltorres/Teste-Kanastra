@@ -1,0 +1,14 @@
+.header {
+  background-image: url('canastra2.png');
+  background-size: contain; /* ou background-size: contain; dependendo da sua preferência */
+  background-position: center; /* ou outras posições, como top, bottom, etc. */
+  height: 330px; /* altura do cabeçalho */
+  display: flex;
+  justify-content: center; /* centralizar o conteúdo horizontalmente */
+  align-items: center; /* centralizar o conteúdo verticalmente */
+  color: white; /* cor do texto no cabeçalho */
+  text-align: center; /* centralizar texto horizontalmente */
+}
+.body {
+  color: green; /* cor do texto no cabeçalho */
+}
