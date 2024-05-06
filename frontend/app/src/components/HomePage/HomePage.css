@@ -1,5 +1,5 @@
 .header {
-  background-image: url('canastra2.png');
+  background-image: url('canastra.png');
   background-size: contain; /* ou background-size: contain; dependendo da sua preferência */
   background-position: center; /* ou outras posições, como top, bottom, etc. */
   height: 330px; /* altura do cabeçalho */
@@ -11,4 +11,5 @@
 }
 .body {
   color: green; /* cor do texto no cabeçalho */
+  text-align: center;
 }

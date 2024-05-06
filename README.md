@@ -14,7 +14,7 @@ Este sistema foi desenvolvido visando solucionar o desafio de construir um siste
 - Python
 - Django e Django Rest Framework
 - React.JS
-- Docker e Docker Compose
+- Docker e Docker Compose 
 - SQLite
 - Postman
 - Swagger
